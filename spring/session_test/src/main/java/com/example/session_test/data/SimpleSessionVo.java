@@ -1,11 +1,13 @@
 package com.example.session_test.data;
 
+import org.springframework.security.core.userdetails.UserDetails;
+
 import java.util.HashMap;
 import java.util.Map;
 
 public class SimpleSessionVo implements SessionVo{
 
-    String role;
+    UserDetails userDetails;
 
     Map<String , String> dataMap = new HashMap<>();
 
@@ -15,11 +17,11 @@ public class SimpleSessionVo implements SessionVo{
     }
 
     @Override
-    public String getRole() {
-        return this.role;
+    public UserDetails getUserDetails() {
+        return this.userDetails;
     }
 
-    public void setRole(String role) {
-        this.role = role;
+    public void setUserDetails(UserDetails userDetails) {
+        this.userDetails = userDetails;
     }
 }

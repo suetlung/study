@@ -5,7 +5,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Map;
 
 public interface SessionVo {
-    String getRole();
+    UserDetails getUserDetails();
     Map<String,String> getDataMap();
 }
 
