@@ -7,6 +7,8 @@ import java.util.Map;
 public interface SessionVo {
     UserDetails getUserDetails();
     Map<String,String> getDataMap();
+
+    void setUserDetails(UserDetails userDetails);
 }
 
 

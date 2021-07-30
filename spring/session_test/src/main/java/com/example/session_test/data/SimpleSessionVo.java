@@ -21,6 +21,7 @@ public class SimpleSessionVo implements SessionVo{
         return this.userDetails;
     }
 
+    @Override
     public void setUserDetails(UserDetails userDetails) {
         this.userDetails = userDetails;
     }
